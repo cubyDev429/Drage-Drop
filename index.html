@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="col left-section" id="col1">
+            <div id="drag-list" class="drag-list">
+                <ul>
+                    <li><span id="drag1" class="drag drag1">
+                        GUICHE
+                    </span><span>GUICHE</span>
+                    </li>
+                    <li><span id="drag2" class="drag drag2">E
+                    </span><span>E</span>
+                    </li>
+                    <li><span id="drag3" class="drag drag3">LP
+                    </span><span>LP</span>
+                    </li>
+                    <li><span id="drag4" class="drag drag4">NP
+                    </span><span>NP</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="drag-option">
+                To draw line between two items, let's fill 2 number and then click draw Line button
+                <div>
+                    <label>GUICHE</label>
+                    <input type="text" name="" id="first_item">
+                </div>
+                <div>
+                    <label>E</label>
+                    <input type="text" name="" id="second_item">
+                </div>
+                <div>
+                    <label>LP</label>
+                    <input type="text" name="" id="third_item">
+                </div>
+                <div>
+                    <label>NP</label>
+                    <input type="text" name="" id="fourth_item">
+                </div>
+                <div>
+                    <input type="button" name="" id="btnDraw" value="draw line">
+                </div>
+            </div>
+
+            <div class="erase-option">
+                To delete line, enter the line number to be deleted and then click earase line button
+                <div>
+                    <label>Erash No</label>
+                    <input type="text" name="" id="erase_item">
+                </div>
+                <div>
+                    <input type="button" name="" id="btnErase" value="erase line">
+                </div>
+            </div>
+        </div>
+        <div class="col droppable droppable1">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-line.js"></script>
+    <script type="text/javascript" src="./js/drag-action.js"></script>
+</body>
+</html>
